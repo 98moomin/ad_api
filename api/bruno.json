@@ -1,0 +1,15 @@
+{
+  "version": "1",
+  "name": "admizer",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ],
+  "size": 0.000247955322265625,
+  "filesCount": 3,
+  "presets": {
+    "requestType": "http",
+    "requestUrl": "http://127.0.0.1:5050"
+  }
+}

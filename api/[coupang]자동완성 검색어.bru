@@ -1,0 +1,20 @@
+meta {
+  name: [coupang]자동완성 검색어
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{server_url}}/coupang/page/get_autocomplete
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {"user_id": "test","keyword":"가습기"}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

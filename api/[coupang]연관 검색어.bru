@@ -1,0 +1,20 @@
+meta {
+  name: [coupang]연관 검색어
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{server_url}}/coupang/page/get_related
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {"user_id": "test","keyword":"아이폰"}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

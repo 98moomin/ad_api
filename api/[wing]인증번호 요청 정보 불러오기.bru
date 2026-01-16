@@ -1,0 +1,20 @@
+meta {
+  name: [wing]인증번호 요청 정보 불러오기
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{server_url}}/coupang/wing/get_verify_info
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {"user_id": "test","coupang_id": "elqhfqm02","coupang_pw": "Kyky4226!!"}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

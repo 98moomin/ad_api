@@ -1,11 +1,11 @@
 meta {
-  name: [wing]로켓그로스 상품 목록 조회
+  name: [wing]로켓그로스 상품 목록 갱신 및 조회
   type: http
-  seq: 9
+  seq: 10
 }
 
 post {
-  url: {{test_url}}/coupang/wing/get_rocketgrowth_product_list
+  url: {{test_url}}/coupang/wing/sync_rocketgrowth_product_list
   body: json
   auth: inherit
 }

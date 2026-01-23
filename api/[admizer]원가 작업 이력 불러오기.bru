@@ -1,0 +1,23 @@
+meta {
+  name: [admizer]원가 작업 이력 불러오기
+  type: http
+  seq: 14
+}
+
+post {
+  url: {{test_url}}/coupang/origin_price/history
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "user_id": "test",
+    "vendor_item_id": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

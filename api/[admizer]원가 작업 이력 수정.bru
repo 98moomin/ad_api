@@ -1,0 +1,25 @@
+meta {
+  name: [admizer]원가 작업 이력 수정
+  type: http
+  seq: 12
+}
+
+post {
+  url: {{test_url}}/coupang/origin_price/update
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "user_id": "test",
+    "history_id": "2",
+    "change_date": "2026-01-20",
+    "origin_price": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,27 @@
+meta {
+  name: [admizer]원가 저장
+  type: http
+  seq: 11
+}
+
+post {
+  url: {{test_url}}/coupang/origin_price/save
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "user_id": "test",
+    "vendor_item_id": "",
+    "vendor_inventory_id": "",
+    "option_title": "",
+    "option_status": "",
+    "origin_price": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,22 @@
+meta {
+  name: [admizer]정산 엑셀 다운로드 트리거
+  type: http
+  seq: 18
+}
+
+post {
+  url: {{test_url}}/coupang/payment/trigger
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "user_ids": "pepcilia@naver.com"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

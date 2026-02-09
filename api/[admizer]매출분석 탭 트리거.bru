@@ -1,0 +1,23 @@
+meta {
+  name: [admizer]매출분석 탭 트리거
+  type: http
+  seq: 19
+}
+
+post {
+  url: {{test_url}}/coupang/sales_analysis/trigger
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "user_ids": ["pepcilia@naver.com"],
+    "date": "2026-02-05"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

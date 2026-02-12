@@ -1,11 +1,11 @@
 meta {
   name: [admizer]숨김 상태 저장
   type: http
-  seq: 16
+  seq: 19
 }
 
 post {
-  url: {{test_url}}/coupang/is_hide/save
+  url: {{test_url}}/product/is_hide/save
   body: json
   auth: inherit
 }
@@ -13,6 +13,7 @@ post {
 body:json {
   {
     "user_id": "pepcilia@naver.com",
+    "market": "coupang_seller",
     "vendor_item_id": "15782685536",
     "vendor_inventory_id": "93679722041"
   }

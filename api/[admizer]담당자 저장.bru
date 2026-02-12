@@ -1,11 +1,11 @@
 meta {
   name: [admizer]담당자 저장
   type: http
-  seq: 15
+  seq: 18
 }
 
 post {
-  url: {{test_url}}/coupang/product_manager/save
+  url: {{test_url}}/product/product_manager/save
   body: json
   auth: inherit
 }
@@ -13,6 +13,7 @@ post {
 body:json {
   {
     "user_id": "pepcilia@naver.com",
+    "market": "coupang_seller",
     "vendor_inventory_id": "15782685536",
     "product_manager": "박무진"
   }

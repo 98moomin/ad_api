@@ -1,11 +1,11 @@
 meta {
   name: [admizer]작업 로그 불러오기
   type: http
-  seq: 17
+  seq: 20
 }
 
 post {
-  url: {{test_url}}/coupang/action_log/history
+  url: {{test_url}}/product/action_log/history
   body: json
   auth: inherit
 }
@@ -13,6 +13,7 @@ post {
 body:json {
   {
     "user_id": "pepcilia@naver.com",
+    "market": "coupang_seller",
     "vendor_inventory_id": "93679722044"
   }
 }

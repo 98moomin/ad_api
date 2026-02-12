@@ -1,11 +1,11 @@
 meta {
   name: [admizer]원가 작업 이력 불러오기
   type: http
-  seq: 14
+  seq: 17
 }
 
 post {
-  url: {{test_url}}/coupang/origin_price/history
+  url: {{test_url}}/product/origin_price/history
   body: json
   auth: inherit
 }
@@ -13,6 +13,7 @@ post {
 body:json {
   {
     "user_id": "test",
+    "market": "coupang_seller",
     "vendor_item_id": ""
   }
 }

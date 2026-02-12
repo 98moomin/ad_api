@@ -1,0 +1,22 @@
+meta {
+  name: [smartstore]상품 목록 갱신 및 조회
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{test_url}}/smartstore/sync_product_list
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "user_id": "pepcilia@naver.com"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

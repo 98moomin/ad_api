@@ -1,0 +1,28 @@
+meta {
+  name: [smartstore]계정 정보 저장
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{test_url}}/smartstore/set_account_info
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "user_id": "pepcilia@naver.com",
+    "store_name": "디큐브",
+    "client_id": "40zKN8S4ed1RmBXO0addR8",
+    "client_secret": "$2a$04$esy8EFEA8u0BoGFPD/Vaxe",
+    "customer_id": "",
+    "access_license": "",
+    "secret_key": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

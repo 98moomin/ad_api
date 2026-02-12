@@ -1,11 +1,11 @@
 meta {
   name: [admizer]원가 저장
   type: http
-  seq: 11
+  seq: 14
 }
 
 post {
-  url: {{test_url}}/coupang/origin_price/save
+  url: {{test_url}}/product/origin_price/save
   body: json
   auth: inherit
 }
@@ -13,12 +13,12 @@ post {
 body:json {
   {
     "user_id": "test",
+    "market": "coupang_seller",
     "vendor_item_id": "",
     "vendor_inventory_id": "",
     "option_title": "",
     "option_status": "",
     "origin_price": "",
-    "product_type": "",
     "change_date": "",
   }
   
